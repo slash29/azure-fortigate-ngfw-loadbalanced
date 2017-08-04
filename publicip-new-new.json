@@ -85,7 +85,7 @@
       }
     },
   "variables": {
-    "compute_AvailabilitySet_FG_Name": "[concat('AS_','EAZ-FW-HA-0001','_','EAZ-FW-HA-0002','_AS')]",
+    "compute_AvailabilitySet_FG_Name": "[concat('AS_','NAZ-FW-HA-0001','_','NAZ-FW-HA-0002','_AS')]",
     "compute_AvailabilitySet_FG_Id": "[resourceId('Microsoft.Compute/availabilitySets', variables('compute_AvailabilitySet_FG_Name'))]",
     "publicIPID": "[resourceID('Microsoft.Network/publicIPAddresses',parameters('publicIPAddressName'))]",
     "publicIP2ID": "[resourceID('Microsoft.Network/publicIPAddresses',parameters('publicIPAddress2Name'))]",
