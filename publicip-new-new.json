@@ -87,6 +87,8 @@
   "variables": {
     "compute_AvailabilitySet_FG_Name": "[concat('AS_',variables('vmName'),'_',variables('vm2Name'),'_AS')]",
     "compute_AvailabilitySet_FG_Id": "[resourceId('Microsoft.Compute/availabilitySets', variables('compute_AvailabilitySet_FG_Name'))]",
+    "vmName": "[concat(parameters('FortiGateNamePrefix'),'-0001')]",
+    "vm2Name": "[concat(parameters('FortiGateNamePrefix'),'-0002')]",
     "publicIPID": "[resourceID('Microsoft.Network/publicIPAddresses',parameters('publicIPAddressName'))]",
     "publicIP2ID": "[resourceID('Microsoft.Network/publicIPAddresses',parameters('publicIPAddress2Name'))]",
     "network_LB_Public_NatRule_FGAdminPerm_fg1_Name": "[concat(parameters('VMName'),'_FGAdminPerm')]",
