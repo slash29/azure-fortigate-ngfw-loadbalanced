@@ -20,12 +20,6 @@
         "description": "Resource Group"
       }
     },
-    "FortiGateNamePrefix": {
-      "type": "string",
-      "metadata": {
-        "description": "Name for FortiGate virtual appliances (A & B will be appended to the end of each respectively)."
-      }
-    },
     "publicIPAddress2Name": {
       "type": "string",
       "metadata": {
